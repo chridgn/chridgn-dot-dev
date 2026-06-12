@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Christian Quebral</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #292929;
+      background: #fff;
+      padding: 0 24px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 0 120px;
+    }
+
+    .back {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: #9b9b9b;
+      text-decoration: none;
+      margin-bottom: 56px;
+    }
+
+    .back:hover { color: #292929; }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .project-links a {
+      font-size: 0.875rem;
+      color: #6b6b6b;
+      text-decoration: none;
+      border-bottom: 1px solid #d0d0d0;
+      padding-bottom: 1px;
+    }
+
+    .project-links a:hover { color: #292929; border-color: #292929; }
+
+    .project-body {
+      color: #444;
+      font-size: 0.95rem;
+      line-height: 1.85;
+    }
+
+    .project-body p + p { margin-top: 1em; }
+
+    .not-found { color: #9b9b9b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../" class="back">← Christian Quebral</a>
+    <div id="project"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="../content.js"></script>
+  <script>
+    const slug = window.location.hash.slice(1);
+    const container = document.getElementById("project");
+
+    if (!slug) {
+      window.location.replace("../");
+    } else {
+      const project = PROJECTS.find(p => p.slug === slug);
+      if (project) {
+        document.title = project.title + " — Christian Quebral";
+        const linksHTML = project.links
+          ? project.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer">${l.label}</a>`).join("")
+          : "";
+
+        const renderBody = (bodyHTML) => {
+          container.innerHTML = `
+            <h1>${project.title}</h1>
+            ${linksHTML ? `<div class="project-links">${linksHTML}</div>` : ""}
+            <div class="project-body">${bodyHTML}</div>
+          `;
+        };
+
+        if (project.bodyFile) {
+          fetch("../" + project.bodyFile)
+            .then(r => r.text())
+            .then(md => renderBody(marked.parse(md)))
+            .catch(() => renderBody("<p>Could not load content.</p>"));
+        } else {
+          renderBody(project.body || "");
+        }
+      } else {
+        container.innerHTML = `<p class="not-found">Project not found.</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
