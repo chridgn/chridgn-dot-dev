@@ -5,6 +5,18 @@ const SITE = {
 
 const PROJECTS = [
   {
+    slug: "openrct2-telemetry",
+    title: "OpenRCT2 Telemetry",
+    date: "May 2026",
+    description: "A plugin written for OpenRCT2 allowing me to ingest park data into Kafka",
+    banner: "images/openrct2-telemetry.png",
+    links: [
+      { label: "Github (Plugin)", url: "https://github.com/chridgn/openrct2-telemetry" },
+      { label: "Github (Example Pipeline)", url: "https://github.com/chridgn/openrct2-telemetry-pipeline"}
+    ],
+    bodyFile: "content/openrct2-telemetry.md",
+  },
+  {
     slug: "dashboards-by-dif",
     title: "Dashboards by Dif",
     date: "June 2026",
@@ -15,18 +27,7 @@ const PROJECTS = [
       { label: "GitHub", url: "https://github.com/chridgn/dashboards-by-dif" },
     ],
     bodyFile: "content/dashboards-by-dif.md",
-  },
-  {
-    slug: "openrct2-telemetry",
-    title: "OpenRCT2 Telemetry",
-    date: "May 2026",
-    description: "A plugin written for OpenRCT2 allowing me to ingest park data into Kafka",
-    banner: "images/openrct2-telemetry.png",
-    links: [
-      { label: "GitHub", url: "https://github.com/chridgn/openrct2-telemetry" },
-    ],
-    bodyFile: "content/openrct2-telemetry.md",
-  },
+  }
 ];
 
 const MISC = [
