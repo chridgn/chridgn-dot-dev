@@ -33,7 +33,7 @@ const MISC = [
   {
     title: "Media Neuroscience Lab Welcomes Spring 2019 Research Assistants and Volunteers",
     url: "https://www.medianeuroscience.org/2019/05/12/spring-19-ras/",
-    description: "One of the happiest days of my life would be the day my name is published on this page. The learnings I walked away with from this lab would be the foundation of my career.",
+    description: "One of the happiest days of my life would be the day my name was published on this page. The learnings I walked away with from this lab would be the foundation of my career.",
   },
   {
     title: "Oxford Academic Journal of Communication -  Video Game Violence and Interactivity: Effect or Equivalence?",
