@@ -33,21 +33,21 @@ const MISC = [
   {
     title: "Media Neuroscience Lab Welcomes Spring 2019 Research Assistants and Volunteers",
     url: "https://www.medianeuroscience.org/2019/05/12/spring-19-ras/",
-    description: "One of the happiest days of my life would be the day my name was published on this page. The learnings I walked away with from this lab would be the foundation of my career.",
+    description: "I consider my time in this lab to be the soft-start of my career due to having to use Python and Linux. Very happy the site is still up.",
   },
   {
     title: "Oxford Academic Journal of Communication -  Video Game Violence and Interactivity: Effect or Equivalence?",
     url: "https://academic.oup.com/joc/article-abstract/70/2/219/5823594",
-    description: "The resulting academic paper of the study that I assisted with as an RA in UCSB's Media Neuroscience Lab.",
+    description: "Co-authored paper resulting from my time as an RA in UCSB's Media Neuroscience Lab.",
   },
   {
     title: "NIH National Library of Medicine - Cognitive and perceptual load have opposing effects on brain network efficiency and behavioral variability in ADHD",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10727773/",
-    description: "Academic study that I assisted with data collection and processing for (this would be my first introducton to Python :))",
+    description: "Acknowledged for assisting with data collection and processing. Also my first real introduction to Python.",
   },
   {
     title: "NIH National Library of Medicine - Monitoring of postural sway with a head-mounted wearable device: effects of gender, participant state, and concussion",
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6503189/",
-    description: "Another study that I assisted with and received acknowledgement for.",
+    description: "Acknowledged for assisting with this study as well.",
   },
 ];

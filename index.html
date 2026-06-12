@@ -146,8 +146,10 @@
     MISC.forEach(item => {
       const li = document.createElement("li");
       li.innerHTML = `<a href="${item.url}" target="_blank" rel="noopener noreferrer">
-        <div class="item-title">${item.title}</div>
-        <div class="item-desc">${item.description}</div>
+        <div>
+          <div class="item-title">${item.title}</div>
+          <div class="item-desc">${item.description}</div>
+        </div>
       </a>`;
       miscList.appendChild(li);
     });
