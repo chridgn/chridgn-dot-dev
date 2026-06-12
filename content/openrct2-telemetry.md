@@ -1,3 +1,5 @@
+![OpenRCT2 telemetry demo](../images/openrct2-telemetry.gif)
+
 Page in progress - for now, I'll add some brief details here.
 
 # OpenRCT2 Telemetry Pipeline
