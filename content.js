@@ -5,6 +5,17 @@ const SITE = {
 
 const PROJECTS = [
   {
+    slug: "lineage-map",
+    title: "LineageMap",
+    date: "May 2026",
+    description: "A lightweight CLI tool for generating lineage graphs for DBT projects!",
+    banner: "images/github.svg",
+    links: [
+      { label: "Github", url: "https://github.com/chridgn/lineage-map" },
+    ],
+    bodyFile: "content/openrct2-telemetry.md",
+  },
+  {
     slug: "openrct2-telemetry",
     title: "OpenRCT2 Telemetry",
     date: "May 2026",
