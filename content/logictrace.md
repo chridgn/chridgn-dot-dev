@@ -1,5 +1,7 @@
 **logictrace**
 
+![logictrace demo](../images/logictrace.gif)
+
 There is a moment every data engineer knows. You open a final mart: `fct_revenue_monthly`, and a stakeholder asks: "What exactly is `revenue`? Where does it come from? Is it net or gross? Does it include refunds?"
 
 You open the model. It's a `SUM`... of what? You trace it back to intermediate. That column came from staging. Staging cast it from something in raw. Along the way there was a filter - Transactions above $1,000 only - that nobody documented. You've now spent twenty minutes reading SQL across four models to reconstruct something that should have been a one-liner. logictrace is that one-liner.
