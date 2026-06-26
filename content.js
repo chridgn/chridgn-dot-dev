@@ -5,6 +5,17 @@ const SITE = {
 
 const PROJECTS = [
   {
+    slug: "logictrace",
+    title: "logictrace",
+    date: "June 2026",
+    description: "Trace any dbt column back to its source and get a plain-English explanation of every transformation along the way.",
+    banner: "images/github.svg",
+    links: [
+      { label: "GitHub", url: "https://github.com/chridgn/logictrace" },
+    ],
+    bodyFile: "content/logictrace.md",
+  },
+  {
     slug: "lineage-map",
     title: "LineageMap",
     date: "May 2026",
