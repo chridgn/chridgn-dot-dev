@@ -11,7 +11,8 @@ const PROJECTS = [
     description: "Trace any dbt column back to its source and get a plain-English explanation of every transformation along the way.",
     banner: "images/github.svg",
     links: [
-      { label: "GitHub", url: "https://github.com/chridgn/logictrace" },
+      { label: "GitHub", url: "https://github.com/chridgn/logic-trace" },
+      { label: "PyPI", url: "https://pypi.org/project/logictrace/" },
     ],
     bodyFile: "content/logictrace.md",
   },
