@@ -4,7 +4,7 @@
 
 This document is a work in progress as I am still working on packaging the tool; visit the repository to track progress!
 
-LineageMap is a lightweight, open source tool that gives data engineers column-level lineage for dbt projects — no catalog required.
+LineageMap is a lightweight, open source tool that gives data engineers column-level lineage for dbt projects; no catalog required.
 
 Most teams either have no lineage visibility at all, or they're paying five figures a year for an enterprise catalog. LineageMap sits in the middle: run one command against your dbt project and get an interactive graph showing exactly where every column comes from and what breaks if you change it.
 
@@ -27,7 +27,7 @@ With this library I'm looking to solve the "where does this metric come from?" q
 
 **How it works**
 
-Reads dbt's compiled `manifest.json` — no live warehouse connection needed — parses the SQL with [sqlglot](https://github.com/tobymao/sqlglot) to extract column-level dependencies, and builds a traversable graph you can explore in the terminal or a web UI. No live warehouse connection, no catalog setup.
+Reads dbt's compiled `manifest.json`; no live warehouse connection needed; parses the SQL with [sqlglot](https://github.com/tobymao/sqlglot) to extract column-level dependencies, and builds a traversable graph you can explore in the terminal or a web UI. No live warehouse connection, no catalog setup.
 
 ```
 $ lineagemap trace --column revenue
@@ -57,5 +57,5 @@ dbt Core v2.0 (Fusion) now ships column-level lineage in OSS, and [dbt-column-li
 
 - [x] Phase 1: CLI + SQL parser (`lineagemap trace`)
 - [x] Phase 2: Local web UI with interactive DAG visualization
-- [ ] Phase 3: Hosted tier — upload `manifest.json`, get a shareable URL
-- [ ] Phase 4: GitHub Action — post updated lineage URL on every dbt PR
+- [ ] Phase 3: Hosted tier; upload `manifest.json`, get a shareable URL
+- [ ] Phase 4: GitHub Action; post updated lineage URL on every dbt PR
