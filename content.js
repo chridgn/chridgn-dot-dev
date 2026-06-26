@@ -13,7 +13,7 @@ const PROJECTS = [
     links: [
       { label: "Github", url: "https://github.com/chridgn/lineage-map" },
     ],
-    bodyFile: "content/openrct2-telemetry.md",
+    bodyFile: "content/lineage-map.md",
   },
   {
     slug: "openrct2-telemetry",
