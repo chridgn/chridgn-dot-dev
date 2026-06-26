@@ -1,7 +1,10 @@
 This project is now live and available on PyPi! Visit the link above or install with:
+
 ```
 pip install logictrace
 ```
+
+---
 
 ## Why Logictrace?
 
