@@ -1,6 +1,9 @@
-**logictrace**
+This project is now live and available on PyPi! Visit the link above or install with:
+```
+pip install logictrace
+```
 
-![logictrace demo](../images/logictrace.gif)
+## Why Logictrace?
 
 There is a moment every data engineer knows. You open a final mart: `fct_revenue_monthly`, and a stakeholder asks: "What exactly is `revenue`? Where does it come from? Is it net or gross? Does it include refunds?"
 
@@ -9,6 +12,7 @@ You open the model. It's a `SUM`... of what? You trace it back to intermediate. 
 ---
 
 ## What it does
+![logictrace demo](../images/logictrace.gif)
 
 Point logictrace at any column in any model and it walks the dependency chain back to the source, classifying every transformation it finds along the way:
 
